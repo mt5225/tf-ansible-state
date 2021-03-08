@@ -27,3 +27,9 @@ terraform init -plugin-dir ./providers
 terraform plan -var-file ./inputs/default.tfvars
 
 ```
+
+# start artifactory
+
+```
+docker-compose -f artifactory-oss.yml up -d
+```

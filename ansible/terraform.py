@@ -369,7 +369,7 @@ class AnsibleGroup(object):
 
 def _execute_shell():
     encoding = 'utf-8'
-    tf_workspace = [TERRAFORM_PATH, 'workspace', 'select', TERRAFORM_WS_NAME]
+    tf_workspace = [TERRAFORM_PATH, 'version']
     proc_ws = Popen(tf_workspace,
                     cwd=TERRAFORM_DIR,
                     stdout=PIPE,
